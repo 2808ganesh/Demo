@@ -14,9 +14,10 @@ public class WelcomeRestController {
 	@GetMapping("/welcome")
 	public String getWelcomemsg() {
 		
+		System.out.println("skfksfs");
 		String port = environment.getProperty("server.port");
 		String msg="Welcome to ashokit"+"(port :: "+ port+")";
-		
+		System.out.println("fkjfef");
 		return msg;
 	}
 }
